@@ -6,12 +6,12 @@ class Command:
         pass
 
 
-class LigarLampadaCommand(Command):
-    def __init__(self, lampada):
-        self.lampada = lampada
+class GerenciarCafeteiraCommand(Command):
+    def __init__(self, cafeteira):
+        self.cafeteira = cafeteira
 
     def execute(self):
-        self.lampada.ligar()
+        self.cafeteira.ligar()
 
     def undo(self):
-        self.lampada.desligar()
+        self.cafeteira.desligar()
