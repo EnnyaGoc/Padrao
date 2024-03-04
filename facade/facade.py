@@ -15,10 +15,11 @@ class Facade:
         self.carro = Carros()
         self.pagamento = Pagamentos()
 
-    def reservarViagem(self, data, destino, hotel, dia, carro):
+    def reservarViagem(self, data, destino, hotel, dia, carro, cartao, valor):
         self.voo.reservaVoo(data, destino)
         self.hotel.reservaQuarto(hotel, dia)
         self.carro.alugaCarro(carro, dia)
-    
-    def realizarPagamento(self, cartao, valor):
         self.pagamento.realizarPagamento(cartao, valor)
+    
+    
+        
