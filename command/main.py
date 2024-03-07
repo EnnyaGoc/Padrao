@@ -1,7 +1,7 @@
 from Cafeteira import Cafeteira
 from Command import GerenciarCafeteiraCommand
 from Controle import Controle
-    # Cliente
+
     
     if __name__ == "__main__":
     
@@ -10,13 +10,8 @@ from Controle import Controle
 
     controle = Controle()
     controle.adicionar(gerenciarCafeteiraCommand)
-    controle.executar()  # Lâmpada ligada.
-
-    controle.desfazer()  # Lâmpada desligada.
-
-
-
-
+    controle.executar()  
+    controle.desfazer()  
 
 
     #Command:
