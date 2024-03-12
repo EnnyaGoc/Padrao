@@ -1,0 +1,9 @@
+Considere um jogo de RPG em que os jogadores podem criar personagens com diferentes classes, 
+como guerreiro, mago, arqueiro, entre outras. Cada classe possui habilidades específicas e equipamentos distintos.
+O desafio é projetar um sistema que permita a criação de personagens de forma flexível e extensível, 
+garantindo que novas classes possam ser adicionadas facilmente ao jogo.
+Proponha uma solução utilizando o padrão de design Factory Method para criar uma fábrica
+ de objetos para cada classe de personagem. Cada classe de personagem deve implementar uma interface comum,
+  permitindo que o sistema crie personagens de qualquer classe sem conhecer detalhes específicos da implementação.
+
+Para testar o funcionamento, crie uma classe Cliente e faça nela a criação de vários personagens do jogo.
