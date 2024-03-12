@@ -1,0 +1,10 @@
+Imagine um jogo de combate em que os jogadores podem escolher diferentes 
+estratégias para suas unidades militares durante uma batalha. 
+Cada estratégia impacta o comportamento das unidades de maneira distinta, 
+como agressividade, defensividade, estratégias de flanqueamento, e outras que você imaginar.
+Crie um projeto que simule um jogo em execução (utilize mensagens no console para isso),
+ e permita aos jogadores alterar dinamicamente as estratégias de suas unidades durante o jogo,
+  influenciando diretamente o comportamento delas no campo de batalha.
+Sua proposta de solução deve utilizar o padrão de design Strategy para representar cada estratégia
+ como uma classe separada e permitir que as unidades possam trocar de estratégia em tempo de execução. 
+Explique o que você precisaria fazer para evoluir o jogo caso deseja incluir uma nova estratégia.
