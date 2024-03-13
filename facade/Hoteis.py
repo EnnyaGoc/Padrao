@@ -1,8 +1,8 @@
 class Hoteis:
-    def verificaDisponibilidade(self, hotel, dia):
+    def verificaDisponibilidade(self, hotel, data):
         print("disponibilidade verificada")
         pass
 
-    def reservaQuarto(self, hotel, dia):
+    def reservaQuarto(self, hotel, data):
         print("quarto reservado") 
         pass
