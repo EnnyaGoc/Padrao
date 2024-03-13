@@ -1,6 +1,6 @@
 public class Cliente{
-    public static void main(Sring[] args){
-        FabricaPersonagemogo arqueiro = new FabricaArqueiro();
+    public static void main(String[] args){
+        FabricaPersonagem arqueiro = new FabricaArqueiro();
         arqueiro.jogar();
       
         FabricaPersonagem guerreiro = new FabricaGuerreiro();
