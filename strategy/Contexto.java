@@ -8,4 +8,8 @@ public class Contexto{
     public void setEstrategia(IEstrategia estrategia){
         this.estrategia = estrategia;
     }
+
+    public void Acao(){
+        estrategia.executar();
+    }
 }
