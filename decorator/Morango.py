@@ -1,12 +1,12 @@
-from milkshake import MilkShake
+from MilkShakeDecorator import MilkShakeDecorator
 
-class Morango(MilkShake):
+class Morango(MilkShakeDecorator):
     def __init__(self, m):
         super().__init__(m)
 
     def monta(self):
         super().monta()
-        self.add_morango()
+        self.addMorango()
 
-    def add_morango(self):
-        print("adiciona morango")
+    def addMorango(self):
+        print("- adiciona morango")

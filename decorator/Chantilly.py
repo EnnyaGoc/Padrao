@@ -1,6 +1,6 @@
-from milkshake import MilkShake
+from MilkShakeDecorator import MilkShakeDecorator
 
-class Chantilly(MilkShake):
+class Chantilly(MilkShakeDecorator):
     def __init__(self, m):
         super().__init__(m)
 
@@ -9,4 +9,5 @@ class Chantilly(MilkShake):
         self.add_chantilly()
 
     def add_chantilly(self):
-        print("adiciona chantilly")
+        print("- adiciona chantilly")
+

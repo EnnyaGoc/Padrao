@@ -1,6 +1,6 @@
-from milkshake import MilkShake
+from MilkShakeDecorator import MilkShakeDecorator
 
-class Granulado(MilkShake):
+class Granulado(MilkShakeDecorator):
     def __init__(self, m):
         super().__init__(m)
 
@@ -9,4 +9,4 @@ class Granulado(MilkShake):
         self.add_granulado()
 
     def add_granulado(self):
-        print("adiciona granulado")
+        print("- adiciona granulado")

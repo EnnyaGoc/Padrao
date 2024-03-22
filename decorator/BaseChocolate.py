@@ -1,5 +1,5 @@
-from milkshake import MilkShake
+from MilkShake import MilkShake
 
 class BaseChocolate(MilkShake):
     def monta(self):
-        print("fazendo milkshake de chocolate")
+        print("Fazendo milkshake de chocolate...")

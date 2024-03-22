@@ -1,6 +1,6 @@
-from milkshake import MilkShake
+from MilkShakeDecorator import MilkShakeDecorator
 
-class Mm(MilkShake):
+class Mm(MilkShakeDecorator):
     def __init__(self, m):
         super().__init__(m)
 
@@ -9,4 +9,4 @@ class Mm(MilkShake):
         self.add_mm()
 
     def add_mm(self):
-        print("adiciona m&m")
+        print("- adiciona m&m")
