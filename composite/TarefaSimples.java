@@ -1,18 +1,15 @@
 public class TarefaSimples implements Tarefa {
     private boolean concluida = false;
 
-    @Override
     public void concluir() {
         concluida = true;
     }
 
-    @Override
-    public void desfazerConclusao() {
+    public void desfazer() {
         concluida = false;
     }
 
-    @Override
-    public boolean estaConcluida() {
+    public boolean concluida() {
         return concluida;
     }
 }

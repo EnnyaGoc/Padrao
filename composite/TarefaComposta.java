@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class TarefaComposta implements Tarefa {
     private List<Tarefa> subtarefas = new ArrayList<>();
 
@@ -9,24 +8,21 @@ public class TarefaComposta implements Tarefa {
         subtarefas.add(tarefa);
     }
 
-    @Override
     public void concluir() {
         for (Tarefa tarefa : subtarefas) {
             tarefa.concluir();
         }
     }
 
-    @Override
-    public void desfazerConclusao() {
+    public void desfazer() {
         for (Tarefa tarefa : subtarefas) {
-            tarefa.desfazerConclusao();
+            tarefa.desfazer();
         }
     }
 
-    @Override
-    public boolean estaConcluida() {
+    public boolean concluida() {
         for (Tarefa tarefa : subtarefas) {
-            if (!tarefa.estaConcluida()) {
+            if (!tarefa.concluida()) {
                 return false;
             }
         }
