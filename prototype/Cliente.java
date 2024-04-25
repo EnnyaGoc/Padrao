@@ -3,7 +3,7 @@ import java.util.Map;
 
 public class Cliente {
     public static void main(String[] args) {
-        Inimigo prototipo1 = new Inimigo("Goblin", 50, 10);
+        Inimigo prototipo1 = new Inimigo("Dragao", 50, 10);
         Inimigo prototipo2 = new Inimigo("Esqueleto", 40, 15);
 
         Map<String, Inimigo> inimigos = new HashMap<>();
@@ -23,7 +23,7 @@ public class Cliente {
         for (Map.Entry<String, Inimigo> entry : inimigos.entrySet()) {
             String nome = entry.getKey();
             Inimigo inimigo = entry.getValue();
-            System.out.println(nome + ": Tipo - " + inimigo.getTipo() + ", Vida - " + inimigo.getVida() + ", Ataque - " + inimigo.getAtaque());
+            System.out.println(nome + ": Tipo -> " + inimigo.getTipo() + ", Vida -> " + inimigo.getVida() + ", Ataque -> " + inimigo.getAtaque());
         }
     }
 }

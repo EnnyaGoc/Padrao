@@ -24,13 +24,13 @@ public class Inimigo implements Cloneable {
     public int getVida() {
         return vida;
     }
+    
+    public void setVida(int vida) {
+        this.vida = vida;
+    }
 
     public int getAtaque() {
         return ataque;
-    }
-
-    public void setVida(int vida) {
-        this.vida = vida;
     }
 
     public void setAtaque(int ataque) {
