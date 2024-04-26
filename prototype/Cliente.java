@@ -1,29 +1,20 @@
-import java.util.HashMap;
-import java.util.Map;
-
+//Ênnya Gomes Oliveira Campos
 public class Cliente {
     public static void main(String[] args) {
-        Inimigo prototipo1 = new Inimigo("Dragao", 50, 10);
-        Inimigo prototipo2 = new Inimigo("Esqueleto", 40, 15);
+        Inimigo dragao1 = FabricaInimigo.getInimigo("dragao");
+        Inimigo dragao2 = FabricaInimigo.getInimigo("dragao");
+        Inimigo esqueleto1 = FabricaInimigo.getInimigo("esqueleto");
 
-        Map<String, Inimigo> inimigos = new HashMap<>();
+        System.out.println("dragao 1:");
+        dragao1.ataque();
 
-        for (int i = 1; i <= 5; i++) {
-            Inimigo novoInimigo = prototipo1.clone();
-            novoInimigo.setVida(novoInimigo.getVida() + i * 10);
-            inimigos.put("Goblin " + i, novoInimigo);
-        }
+        System.out.println("dragao 2:");
+        dragao2.ataque();
 
-        for (int i = 1; i <= 3; i++) {
-            Inimigo novoInimigo = prototipo2.clone();
-            novoInimigo.setAtaque(novoInimigo.getAtaque() + i * 5);
-            inimigos.put("Esqueleto " + i, novoInimigo);
-        }
-
-        for (Map.Entry<String, Inimigo> entry : inimigos.entrySet()) {
-            String nome = entry.getKey();
-            Inimigo inimigo = entry.getValue();
-            System.out.println(nome + ": Tipo -> " + inimigo.getTipo() + ", Vida -> " + inimigo.getVida() + ", Ataque -> " + inimigo.getAtaque());
-        }
+        System.out.println("esqueleto 1:");
+        esqueleto1.ataque();
     }
 }
+
+//Esse padrao Prototype permite criar facilmente novos tipos de inimigos só adicionando uma nova classe de inimigo e registrando na classe FrabricaInimigo.
+
